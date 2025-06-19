@@ -1,0 +1,23 @@
+﻿@model CourseEvaluationSystem.Models.Evaluation
+
+<h2>Lämna utvärdering</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="CourseID" class="control-label">Kurs</label>
+        <select asp-for="CourseID" class="form-control" asp-items="ViewBag.CourseID"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rating" class="control-label">Betyg (1-5)</label>
+        <input asp-for="Rating" class="form-control" type="number" min="1" max="5" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Comment" class="control-label">Kommentar</label>
+        <textarea asp-for="Comment" class="form-control"></textarea>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Spara</button>
+</form>

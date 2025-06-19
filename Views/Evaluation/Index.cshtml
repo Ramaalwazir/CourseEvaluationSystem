@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Utvärderingssammanfattning";
+    var summaries = ViewData["Summaries"] as dynamic;
+}
+
+<h2>Utvärderingssammanfattning</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Kurs</th>
+            <th>Antal utvärderingar</th>
+            <th>Medelbetyg</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in summaries)
+        {
+            <tr>
+                <td>@item.CourseTitle</td>
+                <td>@item.Count</td>
+                <td>@item.AverageRating</td>
+            </tr>
+        }
+    </tbody>
+</table>
