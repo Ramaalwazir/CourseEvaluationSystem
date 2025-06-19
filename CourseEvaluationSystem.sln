@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35514.174 d17.12
+VisualStudioVersion = 17.12.35514.174
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseEvaluationSystem", "CourseEvaluationSystem.csproj", "{25A480D1-2B08-491B-8D04-719FBF9480AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseEvaluationSystem.Tests", "..\CourseEvaluationSystem.Tests\CourseEvaluationSystem.Tests.csproj", "{65AE1AFF-4310-46E2-948C-AE92358B69E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{25A480D1-2B08-491B-8D04-719FBF9480AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25A480D1-2B08-491B-8D04-719FBF9480AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25A480D1-2B08-491B-8D04-719FBF9480AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65AE1AFF-4310-46E2-948C-AE92358B69E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AE1AFF-4310-46E2-948C-AE92358B69E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AE1AFF-4310-46E2-948C-AE92358B69E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AE1AFF-4310-46E2-948C-AE92358B69E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1004F192-5CBE-4489-BFD6-F4A061BAC337}
 	EndGlobalSection
 EndGlobal
